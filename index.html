@@ -16,7 +16,7 @@
 </head>
 <body>
     
-     <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">              
+     <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
         <div class="container">
             <div class="navbar-header">
                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -43,7 +43,7 @@
         </div>
     </header>
 
-    <div id="body" class="container">
+    <div id="body_" class="container">
         <div class="row">
             <div class="col-md-8"> 
                
@@ -142,8 +142,14 @@ Bootstrap is the most-starred project on GitHub, with over 85,000 stars and more
                 <div class="well text-center">
                     <p class="lead"> Don't wanna miss updates? Click the below Button!! 
                     </p>
-                    <button class="btn btn-success btn-lg"> SUBSCRIBE!!  </button>
+                    <form role="form">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter Your Email Address!"><br/>
+                    <input type="submit" value="submit" class="btn btn-success btn-lg"/> 
+                    </form>
                 </div>
+
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     HEADING
@@ -159,6 +165,7 @@ Bootstrap is the most-starred project on GitHub, with over 85,000 stars and more
                 </div>
                 <div class="panel-footer"></div>
             </div>
+    
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Categories
@@ -166,17 +173,24 @@ Bootstrap is the most-starred project on GitHub, with over 85,000 stars and more
                 <div class="panel-body">
                 <p class="text-center">
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="#">Linux</a></li>
+                        <li class="list-group-item"><a href="http://www.duckduckgo.com" target="#side_div">Linux</a></li>
                         <li class="list-group-item"><a href="#">Mac</a></li>
                         <li class="list-group-item"><a href="#">Windows</a></li>
                     </ul>
                 </p>
+                    <div id="side_div">
+                        <p> This is test div </p>
+                    </div>
                 </div>
                 <div class="panel-footer"></div>
             </div>
             </div>        
         </div>
     </div>
+
+    
+
+
 
     <footer>
         <div class="container">
